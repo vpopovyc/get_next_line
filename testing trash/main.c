@@ -10,7 +10,7 @@ int		main(int ac, char **av)
 
 	if (ac == 1)
 		fd = 0;
-	if ((fd = open(av[1], O_RDONLY)) == -1)
+	else if ((fd = open(av[1], O_RDONLY)) == -1)
 		return (0);
 	else
 	{
